@@ -9,6 +9,9 @@
     "type": "git",
     "url": "http://github.com/torkelo/grafana.git"
   },
+  "dependencies": {
+    "phantomas": "*"
+  },
   "devDependencies": {
     "expect.js": "~0.2.0",
     "glob": "~3.2.7",
