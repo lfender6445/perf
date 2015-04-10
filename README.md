@@ -139,3 +139,9 @@ please [sign the CLA](http://grafana.org/docs/contributing/cla.html)
 Grafana is distributed under Apache 2.0 License.
 Work in progress Grafana 2.0 (with included Grafana backend)
 
+## perf notes
+
+- server - `./grafana web`
+- create account
+- assets - `grunt`
+- start influxdb  - `influxdb -config=/usr/local/etc/influxdb.conf`
