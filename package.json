@@ -61,7 +61,8 @@
   },
   "scripts": {
     "test": "grunt test",
-    "coveralls": "grunt karma:coveralls && rm -rf ./coverage"
+    "coveralls": "grunt karma:coveralls && rm -rf ./coverage",
+    "influx": "phantomas --config phantomas-config.json| scripts/ruby_filter.rb"
   },
   "license": "Apache License",
   "dependencies": {
