@@ -1,10 +1,19 @@
 #!/usr/bin/env ruby -n
 require 'json'
+require 'influxdb'
+
 hash = JSON.parse($_)
-metrics_data =  hash['metrics'].to_json
+data  =  hash['metrics']
 
-p "HERE IS YOUR FILTERED METRICS DATA "
+db = 'perf_development'
+influxdb = InfluxDB::Client.new db
 
-p metrics_data
+
+(0..10).to_a.map do |index|
+  p index
+  sleep 1
+  influxdb.write_point("phantomas_#{index}", data)
+end
+
 
 # TODO: store directly into influxdb

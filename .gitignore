@@ -27,3 +27,4 @@ public/css/*.min.css
 conf/custom.ini
 fig.yml
 
+npm-debug.log

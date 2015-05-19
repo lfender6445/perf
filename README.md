@@ -1,3 +1,11 @@
+## Setup
+
+- server - `./grafana web` | `npm start`
+- create account
+- assets - `grunt`
+- start influxdb  - `influxdb -config=/usr/local/etc/influxdb.conf`
+  - visit `http://localhost:8083/` and press enter without entering creds
+
 [Grafana](http://grafana.org) [![Circle CI](https://circleci.com/gh/grafana/grafana.svg?style=svg)](https://circleci.com/gh/grafana/grafana) [![Coverage Status](https://coveralls.io/repos/grafana/grafana/badge.png)](https://coveralls.io/r/grafana/grafana) [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/grafana/grafana?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 ================
 [Website](http://grafana.org) |
@@ -8,7 +16,7 @@
 Grafana is an open source, feature rich metrics dashboard and graph editor for
 Graphite, InfluxDB & OpenTSDB.
 
-![](http://grafana.org/assets/img/start_page_bg.png)
+![grafana](http://grafana.org/assets/img/start_page_bg.png)
 
 ## Grafana 2.0
 The develop branch has now been merged with master. For 1.9 users this is a big change as Grafana is no longer
@@ -139,9 +147,3 @@ please [sign the CLA](http://grafana.org/docs/contributing/cla.html)
 Grafana is distributed under Apache 2.0 License.
 Work in progress Grafana 2.0 (with included Grafana backend)
 
-## perf notes
-
-- server - `./grafana web`
-- create account
-- assets - `grunt`
-- start influxdb  - `influxdb -config=/usr/local/etc/influxdb.conf`

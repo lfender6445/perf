@@ -62,7 +62,8 @@
   "scripts": {
     "test": "grunt test",
     "coveralls": "grunt karma:coveralls && rm -rf ./coverage",
-    "influx": "phantomas --config phantomas-config.json| scripts/ruby_filter.rb"
+    "influx": "phantomas --config phantomas-config.json| scripts/ruby_filter.rb",
+    "start": "./grafana web"
   },
   "license": "Apache License",
   "dependencies": {
