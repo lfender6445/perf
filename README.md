@@ -1,3 +1,15 @@
+# Setup
+- brew install influxdb
+- start influxdb - `influxdb -config=/usr/local/etc/influxdb.conf`
+- create `dev_test` db
+- `ruby scripts/seed.rb`
+- see and run http://docs.grafana.org/project/building_from_source/
+  - gopkg issues? see https://github.com/rainycape/unidecode/issues/2
+- add datasource + query via grafana (user and pass are both root)
+- http://localhost:8083/ - db interface
+- http://localhost:8086/ - db api server
+- http://localhost:3000/ - grafana dashboard
+
 [Grafana](http://grafana.org) [![Circle CI](https://circleci.com/gh/grafana/grafana.svg?style=svg)](https://circleci.com/gh/grafana/grafana) [![Coverage Status](https://coveralls.io/repos/grafana/grafana/badge.png)](https://coveralls.io/r/grafana/grafana) [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/grafana/grafana?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 ================
 [Website](http://grafana.org) |
